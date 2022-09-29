@@ -8,8 +8,14 @@
 @isTest
 public with sharing class CalculateFlightController_Test {
 
+    /**
+    * @description Tests the method that retrieves the airports based on its IATA code
+    * @author Clarcat | 09-29-2022 
+    **/
     @isTest
     static void RetrieveIATACodes_test() {
+
+        //Create test record
         
         Airport__c ap1 = new Airport__c(
             Name = 'Test',
@@ -24,9 +30,15 @@ public with sharing class CalculateFlightController_Test {
         Test.stopTest();
     }
 
+    /**
+    * @description Tests the method that registers a new flight and calculates its distance 
+    * @author Clarcat | 09-29-2022 
+    **/
     @isTest
     static void RegisterFlight_test() {
         
+        // Create tests records
+
         Airport__c ap1 = new Airport__c(
             Name = 'Test',
             IATA_Codes__c = 'TST',
