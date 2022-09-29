@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Departure_Airport__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Relates to the record of the departure airport</description>
+    <externalId>false</externalId>
+    <label>Departure Airport</label>
+    <referenceTo>Airport__c</referenceTo>
+    <relationshipLabel>Flights</relationshipLabel>
+    <relationshipName>Flights</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

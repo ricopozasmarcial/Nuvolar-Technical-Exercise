@@ -1,0 +1,46 @@
+<!--
+  @description       : 
+  @author            : Clarcat
+  @group             : 
+  @last modified on  : 09-29-2022
+  @last modified by  : Clarcat
+-->
+<template>
+    <lightning-card title="Flight Calculator" icon-name="custom:custom63">
+        <template if:true={loaded}>
+            <div class="slds-m-around_medium">
+                <lightning-combobox
+                    name="progress"
+                    label="Select departure airport"
+                    value=""
+                    placeholder="Select"
+                    options={options}
+                    onchange={handleChangeDeparture}
+                    required
+                ></lightning-combobox>
+            </div>
+        </template>
+        <template if:true={loaded}>
+            <div class="slds-m-around_medium">
+                <lightning-combobox
+                    name="progress"
+                    label="Select arrival airport"
+                    value=""
+                    placeholder="Select"
+                    options={options}
+                    onchange={handleChangeArrival}
+                    required
+                ></lightning-combobox>
+            </div>
+        </template>
+        <div class="slds-m-around_medium">
+            <lightning-button label="Create flight" onclick={handleCreateFlight}>
+            </lightning-button>
+        </div>
+        <template if:true={calculated}>
+            <div class="slds-m-around_medium">
+                <p>Flight from: {departureName}({departureCodeStatic}) with destination: {arrivalName}({arrivalCodeStatic}). Total distance in Km = {distance}</p>
+            </div>
+        </template>
+    </lightning-card>
+</template>

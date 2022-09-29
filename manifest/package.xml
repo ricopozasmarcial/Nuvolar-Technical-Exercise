@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Airport__c.Latitude_Check</members>
+		<members>Airport__c.Longitude_Check</members>
+		<name>ValidationRule</name>
+	</types>
+	<version>53.0</version>
+</Package>

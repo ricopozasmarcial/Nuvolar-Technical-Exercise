@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Latitude_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>Latitude__c &lt; -90 || Latitude__c &gt; 90</errorConditionFormula>
+    <errorMessage>The valid range for latitude values is from +90 to -90 degrees.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Longitude_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>Longitude__c &lt; -180 || Longitude__c &gt; 180</errorConditionFormula>
+    <errorMessage>The valid range for longitude values is from +180 to -180 degrees.</errorMessage>
+</ValidationRule>
